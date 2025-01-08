@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Khyathi Chittineni</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Khyathi Chittineni</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="Assets/Profile Pic.JPG" alt="Khyathi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Khyathi Chittineni</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Assets/Khyathi Chittineni_Software_Engineer copy.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="Assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/khyathi1099/'"
+          />
+          <img
+            src="Assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/khyathi-29'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="Assets/3.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="Assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Software Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="Assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> Masters in Computer Science and Engineering <br />Bachelors of Technology
+            </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            <li>
+            
+              3+ years of experience in the complete software development lifecycle, with expertise in building scalable, high-performance applications
+that address complex business requirements.
+            </p>
+            </li>
+            
+            <p>
+            <li>
+              Proficient in crafting modern web applications using a diverse tech stack, including Java, C++, C#, Python, Kafka, Spring Boot, .NET,
+              React.js, Node.js, TypeScript, GraphQL, and Docker, ensuring robust and maintainable solutions.
+            </p>
+            </li>
+            <p><li>
+              Proficient in using ORM frameworks for relational databases like MySQL and PostgreSQL, as well as NoSQL databases like MongoDB.
+            </li></p>
+            <p><li>
+              Experienced in Agile/Scrum methodologies with strong communication skills and a proven ability to collaborate effectively with
+cross-functional teams to deliver high-quality software. </li></p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Engineer at M&T Bank</h2>
+            <div class="article-container">
+                <p><li> Built a real-time trade metrics dashboard with Java, Spring, Kafka, and React.js, enabling actionable insights, interactive visualizations, and reducing decision-making time by 30%.</li></p>
+                <p><li> Developed high-performance REST APIs in Spring Boot for financial data processing, integrated with Kafka for real-time streaming.</li></p>
+                <p><li> Boosted bond search performance by 50% by scaling Elasticsearch clusters for faster financial queries.</li></p>    
+                <p><li> Managed reliable storage of 1M+ daily messages in PostgreSQL with robust backups and real-time system integration.</li></p>
+          
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title"> Software Engineer at Broadridge </h2>
+            <div class="article-container">
+                <p><li>Built a scalable data feed service processing 5M contracts daily, improving efficiency by 25% and strengthening risk management with real-time validation.</li></p>
+               <p><li>Automated data workflows with Apache Airflow and Python, cutting processing time from 8 hours to 30 minutes and improving efficiency by 90%.</li></p>
+                <p><li>Optimized database performance and added Redis caching, increasing system efficiency by 40%, reducing cloud costs, and ensuring 99.9% data integrity.</li></p>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title"> Software Engineer at Zensar Technologies</h2>
+            <div class="article-container">
+              <p><li>Migrated a Node.js component to AWS Lambda, boosting execution speed by 40% and cutting memory usage by 30%.</li></p> 
+              <p><li>Optimized MongoDB queries with indexing, reducing admin list view load times by 35x and enhancing user experience.</li>
+              </p> <p><li>Refactored legacy code into scalable Spring MVC APIs with 90% test coverage, improving maintainability by 40%.</li></p> 
+              <p><li>Increased shared job service execution speed by 40% via database optimization with Hibernate and MySQL partitioning.</li></p> 
+              </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Assets/music.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Music Copyrights through Blockchain</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sarath3119/music-dapp-deploy'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Assets/2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Foundry Digital - MS Project Development</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vignesh6666/data_engineering_project_openweathermap_api_airflow_etl_aws'"
+              >
+                Github
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Assets/p3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Hospital Management System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/khyathi-29/Health_app-React'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="Assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">chittinenikhyathi29@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="Assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/khyathi1099/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Khyathi Chittineni. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
